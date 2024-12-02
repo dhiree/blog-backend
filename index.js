@@ -17,8 +17,11 @@ const user = {
     password: 'password123'
 };
 
+app.get('/', (req, res) => {
+    res.send("hello World")
 
-// Routes
+})
+
 app.post('/api/login', (req, res) => {
     const { username, password } = req.body;
 
